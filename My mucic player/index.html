@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/6f917e9db0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <audio id="track" src="./Image and song/Haamim Sia Sefid.mp3" ></audio>
+    </div>
+    <div class="player-container">
+      <img
+        id="thumbnail"
+        alt=""
+        src="./Image and song/Haamim - Sia Sefid.jpg"
+      />
+      <div class="box">
+        <div class="play-pause">
+          <i class="far fa-play-circle fa-3x" id="play"></i>
+          <i class="far fa-pause-circle fa-3x" id="pause"></i>
+        </div>
+        <div class="track-info">
+          <div id="track-artist">Haamim</div>
+          <div id="track-title">Sia Sefid</div>
+        </div>
+        <div class="next-prev">
+          <i class="far fa-arrow-alt-circle-left fa-2x" id="prev-track"></i>
+          <i class="far fa-arrow-alt-circle-right fa-2x" id="next-track"></i>
+        </div>
+        <div class="progress-bar">
+          <input type="range" id="progressBar" min="0" max="" value="0" />
+        </div>
+        <div class="track-time">
+          <div id="currentTime"></div>
+          <div id="durationTime"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javaScript/app.js"></script>
+  </body>
+</html>
